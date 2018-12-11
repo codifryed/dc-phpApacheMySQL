@@ -8,7 +8,6 @@ services:
       dockerfile: Dockerfile-apache
     ports:
     - "8080:80"
-    environment:
     volumes:
     - ./data:/var/www/html
 
