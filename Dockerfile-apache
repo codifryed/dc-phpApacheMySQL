@@ -40,6 +40,12 @@ RUN { \
                 echo 'opcache.error_log=""'; \
 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 
+# add php errors to normal Log output:
+RUN { \
+        echo 'log_errors = On'; \
+	echo 'error_log=/dev/stderr'; \
+    } >> /usr/local/etc/php/php.ini-production
+
 RUN a2enmod rewrite expires
 
 VOLUME /var/www/html
