@@ -1,6 +1,6 @@
 # docker-clean-phpApacheMySQL
 
-Apache 2, php 7.2, MySQL 8.0
+Apache 2, php 7.2, MySQL 5.7
 
 ## Instructions:
 
